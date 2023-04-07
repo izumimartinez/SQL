@@ -1,2 +1,8 @@
 # SQL
-SQL Portfolio
+Welcome to my SQL portfolio! My name is Laura Martinez, this code repository contains examples of SQL I've written in class.  Please reach out if you have any questions to the email below.
+stoneizumilaura@gmail.com
+
+Thank you!
+
+
+
