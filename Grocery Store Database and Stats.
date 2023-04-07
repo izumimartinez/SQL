@@ -1,0 +1,24 @@
+CREATE TABLE foods(ID INTEGER PRIMARY KEY, FOOD TEXT, BRAND TEXT, AISLE INTEGER, SOLD INTEGER);
+
+INSERT INTO foods VALUES (1, "apple", "Gala",3,15);
+INSERT INTO foods VALUES (2, "Chicken", "Tyson",3,5);
+INSERT INTO foods VALUES (3, "cheese", "Lanmark",3,3);
+INSERT INTO foods VALUES (4, "Grapes", "Gilbert",7,2);
+INSERT INTO foods VALUES (5, "Icecream", "Ben&Jerry",9,2);
+INSERT INTO foods VALUES (6, "Sushi", "Japan",8,3);
+INSERT INTO foods VALUES (7, "Pizza","Banza",8,14);
+INSERT INTO foods VALUES (8, "Milk", "Silk",9,21);
+INSERT INTO foods VALUES (9, "Eggs", "Egglands",6,33);
+INSERT INTO foods VALUES(10, "Grapes", "Concord", 12,42);
+INSERT INTO foods VALUES (11, "Bread", "NatureOwn", 4,24);
+INSERT INTO foods VALUES (12, "Candy", "Snikers",2,60);
+INSERT INTO foods VALUES (13, "Chocolate", "Hershy",6,35);
+INSERT INTO foods VALUES (14, "Snacks", "Tweenkie",8,18);
+INSERT INTO foods VALUES (15, "Seafood", "Salmon",9,14);
+
+
+SELECT * FROM foods ORDER BY AISLE;
+SELECT sum(SOLD) FROM foods;
+SELECT * FROM foods ORDER BY AISLE;
+SELECT sum(SOLD) FROM foods;
+SELECT * FROM foods WHERE SOLD < 10 ORDER BY AISLE;
