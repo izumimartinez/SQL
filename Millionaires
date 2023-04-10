@@ -1,0 +1,36 @@
+CREATE TABLE millionares (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    age INTEGER,
+    hometown TEXT);
+    
+INSERT INTO millionaires (name, age, hometown) VALUES ("Tyler Perry", 53, "Louisiana");
+
+INSERT INTO millionaires (name, age, hometown) VALUES ("Brad Pitt", 59, "Oklahoma");
+
+INSERT INTO millionaires (name, age, hometown) VALUES ("Rolling Stones", 78, "London");
+
+INSERT INTO millionaires (name, age, hometown) VALUES ("Taylor Swift", 33, "Pensylvania");
+
+INSERT INTO millionaires (name, age, hometown) VALUES ("Bad Bunny", 29, "Puerto Rico");
+
+CREATE table wealth (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+   millionaires_id INTEGER,
+    net_worth TEXT);
+    
+INSERT INTO wealth (millionaires_id, net_worth) VALUES (1, "175 Million");
+
+INSERT INTO wealth (millionaires_id, net_worth) VALUES (2, "100 Million");
+
+INSERT INTO wealth (millionaires_id, net_worth) VALUES (3, "98 Million");
+
+INSERT INTO wealth (millionaires_id, net_worth) VALUES (4, "92 Million");
+
+INSERT INTO wealth (millionaires_id, net_worth) VALUES (5, "88 Million");
+
+
+SELECT millionaires.name, wealth.net_worth
+FROM millionaires
+JOIN wealth
+ON millionaires.id = wealth.millionaires_id;
